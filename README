@@ -1,0 +1,40 @@
+
+Build a real time chat system with laravel, pusher, vuejs, bootstrap 4 and laravel echo.
+https://www.youtube.com/watch?v=u6CwVxcyfD0&list=PLe30vg_FG4OQsCOAzymRY5GkQpFqc1U-D
+https://github.com/bitfumes/Real-Time-Chat
+
+Installation Steps project with first commit source
+------------------------------------------------------------------------------------------------------
+
+1.
+Clone Project.
+
+2.
+Run this two commands in project root folder:
+composer install
+npm install
+
+3.
+Create MySQL DB
+
+4.
+Create account in https://pusher.com
+Create App and get this your app credentials
+
+5.
+Create .env file in project root folder.
+Fill appropriate credentials as in .env.example.
+(Don't forget about setting BROADCAST_DRIVER as 'pusher')
+
+6.
+Run migrations for creating DB tables:
+php artisan migrate
+
+7.
+Run this for generating webpack files:
+npm run watch
+
+8.
+Open app, and register two users for testing.
+Login with that accounts in different browsers (or one of them in incognito)
+Go to /chat URI and test.
