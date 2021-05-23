@@ -10,6 +10,10 @@ Installation Steps project with first commit source
 Clone Project.
 
 2.
+Make sure you've installed "libpng-dev" in your machine
+sudo apt-get update
+sudo apt-get install libpng-dev
+
 Run this two commands in project root folder:
 composer install
 npm install
