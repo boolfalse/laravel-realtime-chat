@@ -1,40 +1,41 @@
 
-Build a real time chat system with laravel, pusher, vuejs, bootstrap 4 and laravel echo.
-https://www.youtube.com/watch?v=u6CwVxcyfD0&list=PLe30vg_FG4OQsCOAzymRY5GkQpFqc1U-D
-https://github.com/bitfumes/Real-Time-Chat
+# [Laravel Pusher Vue.js Echo Bootstrap4](https://www.youtube.com/watch?v=u6CwVxcyfD0&list=PLe30vg_FG4OQsCOAzymRY5GkQpFqc1U-D)
 
-Installation Steps project with first commit source
-------------------------------------------------------------------------------------------------------
+### Installation:
 
-1.
-Clone Project.
+- Create MySQL DB
+- Create account in https://pusher.com
+- Create App and get this your app credentials
 
-2.
-Run this two commands in project root folder:
+- Clone Project.
+```
+git clone git@github.com:boolfalse/laravel-realtime-chat.git
+cd laravel-realtime-chat/
+```
+
+- Create .env file in project root folder.
+- Fill appropriate credentials as in .env. (Don't forget about setting BROADCAST_DRIVER as 'pusher')
+
+
+```
 composer install
 npm install
-
-3.
-Create MySQL DB
-
-4.
-Create account in https://pusher.com
-Create App and get this your app credentials
-
-5.
-Create .env file in project root folder.
-Fill appropriate credentials as in .env.example.
-(Don't forget about setting BROADCAST_DRIVER as 'pusher')
-
-6.
-Run migrations for creating DB tables:
 php artisan migrate
+npm run dev
+```
 
-7.
-Run this for generating webpack files:
-npm run watch
+- Go to /chat URI and test.
 
-8.
-Open app, and register two users for testing.
-Login with that accounts in different browsers (or one of them in incognito)
-Go to /chat URI and test.
+- [OPTIONAL]
+ May there need to install Python for windows
+
+- [OPTIONAL]
+```
+sudo apt update
+sudo apt install libpng-dev
+```
+
+
+### Original Source:
+
+- [bitfumes/Real-Time-Chat](https://github.com/bitfumes/Real-Time-Chat)
